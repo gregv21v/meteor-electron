@@ -35,4 +35,24 @@ Electron.startApp = function () {
   var env = _.extend(process.env, {KILL_METEOR_ON_EXIT: canKill})
 
   var spawnedElectron = spawn(electron, [appPath], {env: env})
+
+  spawnedElectron.stdout.on('data', function (data) {
+    var dataToString = data.toString('utf8')
+    var dataLength = dataToString.length
+
+    if (dataLength > 0) {
+      console.log('jrudio_electron stdout:')
+      console.log(dataToString)
+    }
+  })
+
+  spawnedElectron.stderr.on('data', function (data) {
+    var dataToString = data.toString('utf8')
+    var dataLength = dataToString.length
+
+    if (dataLength > 0) {
+      console.error('jrudio_electron error:')
+      console.error(dataToString)
+    }
+  })
 }
