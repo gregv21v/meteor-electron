@@ -75,7 +75,14 @@ maxogden [Electron-packager](https://github.com/maxogden/electron-packager)
 mafintosh [Electron-prebuilt](https://github.com/mafintosh/electron-prebuilt)
 
 =======
+
 ###[History / Changes](history.md)
+
+###v0.1.1
+
+- Handle spawned electron errors
+
+- Changed localURL instead of localUrl(deprecated) - most likely the cause of the "unhandled error" people have been reporting
 	  
 ##Screenshots
 ![Imgur](http://i.imgur.com/ryEEb21.png "Running a random meteor app on OS X")
