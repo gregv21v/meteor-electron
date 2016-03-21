@@ -15,7 +15,7 @@ This Meteor package starts when meteor starts up, useful for developing your app
 
     /.electron           =>   Electron is downloaded here
       -  /app            =>   Your Electron-specific code goes here - You can make changes to how your Electron app works
-      -  /output         =>   Your app will be sent here when you package it
+      -  /out            =>   Your app will be sent here when you package it
 2.  It will proceed to copy the default main.js & package.json
 3.  Creates an electron.json in the root if one is not present
 4.  Runs Electron
