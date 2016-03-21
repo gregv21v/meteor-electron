@@ -1,6 +1,6 @@
 Package.describe({
   name: 'jrudio:electron',
-  version: '0.1.1',
+  version: '0.1.2',
   summary: 'Run your Meteor app in Electron',
   // URL to the Git repository containing the source code for this package.
   git: 'https://github.com/jrudio/meteor-electron',
@@ -12,6 +12,7 @@ Package.describe({
 
 Npm.depends({
   'shelljs': '0.4.0',
+  'cross-spawn' : '2.1.5',
   'electron-prebuilt': '0.35.0',
   'electron-packager': '5.1.1'
 })

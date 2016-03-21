@@ -1,6 +1,6 @@
 Electron.startApp = function () {
   var path = this.path
-  var spawn = Npm.require('child_process').spawn
+  var spawn = Npm.require('cross-spawn')
   var electron = Npm.require('electron-prebuilt')
   var shelljs = this.shelljs
   var test = shelljs.test
